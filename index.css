@@ -1,13 +1,32 @@
-
+@font-face {
+    font-family: font-Bold;
+    src: url(fonts/sf-pro-display_bold.ttf);
+}
+@font-face {
+    font-family: font-semibold;
+    src: url(fonts/sf-pro-display_semibold.ttf);
+}
 @font-face {
     font-family: font-regular;
+    src: url(fonts/sf-pro-display_regular.ttf);
+}
+@font-face {
+    font-family: font-Bold;
+    src: url(fonts/sf-pro-icons_bold.ttf);
+}
+@font-face {
+    font-family: font-Regular;
     src: url(fonts/sf-pro-icons_regular.ttf);
+}
+@font-face {
+    font-family: font-Text;
+    src: url(fonts/sf-pro-text_regular.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: font-regular;
+    font-family: font-Regular;
 }
 html,body{
     height: 100%;
@@ -20,7 +39,7 @@ html,body{
 nav{
     width: 100%;
     height: 7vh;
-    background-color: rgb(170, 170, 170);
+    background-color: #161617;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +51,52 @@ nav a{
 }
 nav i{
     font-size: 1.3vw;
+    color: #fff;
+}
+.part1{
+    width: 100%;
+    height: 85vh;
+    background-image: url(img/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.text-part1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20vw;
+    color: #fff;
+    gap: 1vh;
+}
+.text-part1 h1{
+    font-size: 4vw;
+    font-family: font-regular;
+}
+.text-part1 p{
+    font-size: 1.5vw;
+    font-family: font-semibold;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 1.5vw;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(48, 48, 246);
+}
+.link a:hover{
+    border-bottom: 1px solid rgb(48, 48, 246);
+}
+#whitepic{
+    background-image: url(img/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg);
+}
+#whitetxt{
+    color: black;
 }
